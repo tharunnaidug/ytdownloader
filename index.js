@@ -1,12 +1,15 @@
 import express from "express"
 import ytdl from 'ytdl-core'
 import path from 'path'
+import cors from 'cors'
 const app = express()
 const port = process.env.PORT || "3000"
 
 app.use(express.json());
 app.use(express.static( 'public'));
 app.set('view engine', 'html');
+app.use(cors())
+app.options('*', cors());
 
 app.get('/', async (req, res) => {
  res.sendFile(path.join(__dirname+'/index.html'));
