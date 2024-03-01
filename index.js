@@ -1,5 +1,6 @@
 import express from "express"
 import ytdl from 'ytdl-core'
+import path from 'path'
 const app = express()
 const port = process.env.PORT || "3000"
 
@@ -7,7 +8,7 @@ app.use(express.json());
 app.use(express.static( 'public'));
 
 app.get('/', async (req, res) => {
-   res.render('index')
+ res.sendFile(path.join(__dirname+'/index.html'));
 })
 
 // For handling Video Download req
