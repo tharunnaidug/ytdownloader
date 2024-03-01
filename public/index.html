@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Youtube Downloader</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon"
+    href="https://static.vecteezy.com/system/resources/previews/018/930/575/non_2x/youtube-logo-youtube-icon-transparent-free-png.png">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <h1>Youtube Downloader</h1>
+  </nav>
+  <div class="loaderCon" id="loader">
+    <span class="loader"></span>
+    <span id="text"></span>
+  </div>
+  <div class="con">
+    <label for="url">Youtube Link</label>
+    <input type="text" name="url" id="url">
+    <div class="subcon">
+      <h3>Select Format</h3>
+      <label for="video">Video</label>
+      <input type="radio" name="format" id="video" checked>
+      <label for="audio">Audio</label>
+      <input type="radio" name="format" id="audio">
+    </div>
+    <button type="submit" id="btn">Get Links</button>
+  </div>
+
+  <div class="con2">
+    <h4>Result</h4>
+    <h3 id="res">Audio Links Below</h3>
+    <div class="linksCon">
+      <!-- <div class="linkEle">
+        <p>64Bit</p>
+        <a href="http://" target="_blank" rel="noopener noreferrer">Download</a>
+      </div> -->
+    </div>
+  </div>
+
+
+</body>
+
+<script src="/javascripts/script.js"></script>
+
+</html>
