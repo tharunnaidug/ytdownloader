@@ -4,7 +4,7 @@ import path from 'path'
 import cors from 'cors'
 const app = express()
 const port = process.env.PORT || "3000"
-
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'html');
