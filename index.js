@@ -6,13 +6,13 @@ const app = express()
 const port = process.env.PORT || "3000"
 
 app.use(express.json());
-app.use(express.static( 'public'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'html');
 app.use(cors())
 app.options('*', cors());
 
 app.get('/', async (req, res) => {
- res.sendFile('index.html');
+res.sendFile(path.join(__dirname, 'public', 'index.html'));
 })
 
 // For handling Video Download req
