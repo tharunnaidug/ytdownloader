@@ -6,11 +6,12 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "server":"nodemon index.js"
+    "server": "nodemon index.js"
   },
   "author": "Tarun Naidu G",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.18.2",
     "ytdl-core": "^4.11.5"
