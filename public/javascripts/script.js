@@ -27,7 +27,7 @@ submitBtn.addEventListener('click', () => {
 })
 // For video
 getVideo = async () => {
-    let host = "http://localhost:3000/"
+    let host = "https://ytdownloader-ten.vercel.app/"
     await fetch(host + 'api/video', {
         method: 'POST',
         headers: {
@@ -46,7 +46,7 @@ getVideo = async () => {
 
 //For Audio
 getAudio = async () => {
-    let host = "http://localhost:3000/"
+    let host = "https://ytdownloader-ten.vercel.app/"
     await fetch(host + 'api/audio', {
         method: 'POST',
         headers: {
